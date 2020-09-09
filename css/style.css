@@ -1,0 +1,268 @@
+/* Je dois revoir comment insérer des icones fontawesome ou fontello, je n'y arrive pas, idem pour les fonts en local, ça ne fonctionne pas
+
+J'ai un problème avec l'upload de mes images une fois le site hébergé, elles s'affichent en local*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #2e2e2e;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.color-background {
+    background-color: #dd5555;
+    color: #fff;
+}
+
+.img-background {
+    color: #fff;
+    padding: 10rem 0;
+}
+
+.no-background {
+    color: #2e2e2e;
+    padding: 6rem 0;
+}
+
+/********************************** Navbar *******************************/
+header {
+    padding: 2rem; 
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+nav ul {
+    font-size: 1.4rem;
+    font-family: "Open Sans";
+    line-height: 1.2;   
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+
+/********************************* About *******************************/
+  h1 {
+    font-size: 4.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.about {
+    text-align: center;
+    background-image: url(../img/about.svg);
+    background-position: center;
+    background-attachment: fixed;
+    padding: 15rem 0;
+}
+
+.about p {
+    font-size: 2.4rem;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 2.4rem;
+}
+
+.about li a {
+    background-color: #fff;
+    color: #2e2e2e;
+}
+
+.about li a,
+.team-item a,
+input[type=submit] {
+    display: block;
+    font-size: 1.8rem;
+  
+    margin: 2rem auto;
+    padding: 1.4rem 2.4rem;
+    width: max-content;
+    border-radius: .5rem;
+}
+  
+
+/************************************ Services ****************************/
+h2 {
+    text-transform: uppercase;
+    font-size: 3.4rem;
+    font-weight: semibold;
+}
+
+h3 {
+    font-size: 2.8rem;
+    font-weight: semibold;
+}
+
+.fas {
+    background-color: #dd5555;
+    width: 12.5rem;
+    height: 12.5rem;
+    border-radius: 50%;
+    margin: 2rem auto;
+}
+
+/************************************** Team *****************************/
+
+.team h2 {
+    font-size: 4.8rem;
+    font-weight: bold;
+    text-transform: inherit;
+}
+
+.team .img-background {
+    background-image: url(../img/team/team.svg);
+    background-position: top;
+}
+
+.team img {
+    display: block;
+    margin: auto;
+}
+
+.team-item h3,
+.team-item {
+    padding: 3rem 0;
+}
+
+.team-img img {
+    border-radius: 50%;
+}
+
+.team-item a {
+    background-color: #dd5555;
+    color: #fff;
+    width: max-content;
+}
+
+/*********************************** Footer ****************************/
+.contact {
+    padding: 6rem 0;
+} 
+
+.contact h2 {
+    padding-bottom: 5rem;
+}
+
+fieldset {
+    border: none;
+    text-align: left;
+}
+
+input,
+textarea,
+label {
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: .5rem;
+    margin-bottom: 3rem;
+}
+input[type=submit] {
+    background-color: #fff;
+    border: none;
+    font-family: 'Open Sans', serif;
+    width: max-content;
+}
+
+@media screen and (min-width:760px) {
+    .container {
+        width: 80%;
+    }
+
+    nav {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        align-items: center;
+    }
+
+    .about-items {
+        max-width: 50%;
+        margin: auto;
+    }
+
+    .about ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .contact input {
+      margin-bottom: 3rem;
+    }
+
+    input,
+    textarea,
+    label {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width:990px) {
+    .services,
+    .team-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+
+    .team h2 {
+        font-size: 3rem;
+    }
+
+
+
+    .contact-items {
+        margin: auto;
+        display: grid;
+        width: 80%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact-item2{
+        width: 90%;
+        margin: auto;
+    }
+
+
+}
+
+@media screen and (min-width:1200px) {
+    nav {
+
+    }
+
+    .services {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .team-items {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+
+}
+
+@media screen and (min-width:1600px) {
+    .container {
+        width: 70%;
+    }
+}
+
