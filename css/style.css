@@ -136,7 +136,7 @@ header {
 
 .logo {
     width: 150px;
-    margin: 0 2rem;
+    margin: auto;
 }
 
 nav ul {
@@ -145,7 +145,7 @@ nav ul {
     line-height: 1.2;
 
     display: flex;
-    gap: 4rem;
+    gap: 2rem;
 }
 
 nav ul li a:hover {
@@ -191,8 +191,9 @@ input[type=submit] {
 
     margin: 0rem auto;
     padding: 1.4rem 2.4rem;
-    width: max-content;
+    width: 15rem;
     border-radius: .5rem;
+    margin: 2rem auto;
 }
 
 
@@ -221,9 +222,10 @@ h3 {
 /************************************** Team *****************************/
 
 .team h2 {
-    font-size: 4.8rem;
+    font-size: 4rem;
     font-weight: bold;
     text-transform: inherit;
+    padding: 0 2rem;
 }
 
 .team .img-background {
@@ -270,11 +272,13 @@ h3 {
 
 fieldset {
     border: none;
-    padding: 0rem 40rem;
 
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+
+    max-width: 80rem;
+    margin: auto;
 }
 
 .contact-items {
@@ -324,9 +328,13 @@ input[type=submit] {
     }
 
     nav {
-        display: grid;
-        grid-template-columns: 150px 1fr;
+        display: flex;
+        flex-direction: row;
         align-items: center;
+    }
+
+    .logo {
+        margin: 0 2rem;
     }
 
     .about-items {
@@ -370,12 +378,20 @@ input[type=submit] {
         gap: 2rem;
     }
 
+    nav ul {
+        gap: 4rem;
+    }
+
     .services {
         grid-template-columns: repeat(3, 1fr);
     }
 
     .team-items {
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    .team h2 {
+        font-size: 4.8rem;
     }
 
 
