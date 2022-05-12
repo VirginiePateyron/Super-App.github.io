@@ -196,6 +196,21 @@ input[type=submit] {
     margin: 2rem auto;
 }
 
+.back-to-top {
+    width: 5rem;
+    position: fixed;
+    bottom: 5rem;
+    right: 5rem;
+}
+
+.back-to-top::before {
+    font: var(--fa-font-solid);
+    content: "\f0aa";
+}
+
+.back-to-top:hover {
+    color: #110707;
+}
 
 /************************************ Services ****************************/
 h2 {
