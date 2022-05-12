@@ -1,6 +1,78 @@
-/* Je dois revoir comment insérer des icones fontawesome ou fontello, je n'y arrive pas, idem pour les fonts en local, ça ne fonctionne pas
+/*  Font Awesome Icons 
+    Step 1: Common Properties: All required to make icons render reliably
+*/
+.icon::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
 
-J'ai un problème avec l'upload de mes images une fois le site hébergé, elles s'affichent en local*/
+/* Step 2: Reference Individual Icons */
+.icon {
+    background-color: #dd5555;
+    width: 12.5rem;
+    height: 12.5rem;
+    border-radius: 50%;
+    margin: 2rem auto;
+
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thumbs::before {
+    font: var(--fa-font-solid);
+    content: "\f164";
+}
+
+.heart::before {
+    font: var(--fa-font-solid);
+    content: "\f004";
+}
+
+.shopping::before {
+    font: var(--fa-font-solid);
+    content: "\f07a";
+}
+
+.utensils::before {
+    font: var(--fa-font-solid);
+    content: "\f2e7";
+}
+
+.bed::before {
+    font: var(--fa-font-solid);
+    content: "\f236";
+}
+
+.fire::before {
+    font: var(--fa-font-solid);
+    content: "\f06d";
+}
+
+.leaf::before {
+    font: var(--fa-font-solid);
+    content: "\f06c";
+}
+
+.umbrella::before {
+    font: var(--fa-font-solid);
+    content: "\f0e9";
+}
+
+.dollar::before {
+    font: var(--fa-font-solid);
+    content: "\24";
+}
+
+/* Note: Make sure to include the correct weight and Unicode value for the icon */
+.tps::before {
+    font: var(--fa-font-regular);
+    content: "\f1ea";
+}
+
+/* -- */
 
 body {
     font-family: 'Open Sans', sans-serif;
@@ -8,6 +80,7 @@ body {
     line-height: 1.5;
     color: #2e2e2e;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .container {
@@ -33,6 +106,11 @@ a {
 .img-background {
     color: #fff;
     padding: 10rem 0;
+    background-attachment: fixed;
+    background-position: bottom;
+
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .no-background {
@@ -40,29 +118,46 @@ a {
     padding: 6rem 0;
 }
 
+.button:hover {
+    background-color: #dd5555;
+    color: #fff;
+}
+
+.team-item a:hover {
+    background: #fff;
+    color: #2e2e2e;
+    border: 1px #2e2e2e solid;
+    padding: 2rem 0;
+}
+
 /********************************** Navbar *******************************/
 header {
-    padding: 2rem; 
+    padding: 2rem;
 }
 
 .logo {
-    display: block;
-    margin: auto;
-    width: 100%;
+    width: 150px;
+    margin: 0 2rem;
 }
 
 nav ul {
     font-size: 1.4rem;
     font-family: "Open Sans";
-    line-height: 1.2;   
+    line-height: 1.2;
 
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
+    display: flex;
+    gap: 4rem;
+}
+
+nav ul li a:hover {
+    background: #ef4f4f;
+    padding: 2rem;
+    max-width: 100%;
+}
 
 
 /********************************* About *******************************/
-  h1 {
+h1 {
     font-size: 4.8rem;
     text-transform: uppercase;
     font-weight: bold;
@@ -73,6 +168,8 @@ nav ul {
     background-image: url(../img/about.svg);
     background-position: center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 15rem 0;
 }
 
@@ -92,13 +189,13 @@ nav ul {
 input[type=submit] {
     display: block;
     font-size: 1.8rem;
-  
-    margin: 2rem auto;
+
+    margin: 0rem auto;
     padding: 1.4rem 2.4rem;
     width: max-content;
     border-radius: .5rem;
 }
-  
+
 
 /************************************ Services ****************************/
 h2 {
@@ -112,12 +209,14 @@ h3 {
     font-weight: semibold;
 }
 
-.fas {
-    background-color: #dd5555;
-    width: 12.5rem;
-    height: 12.5rem;
-    border-radius: 50%;
-    margin: 2rem auto;
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-item {
+    width: 40ch;
 }
 
 /************************************** Team *****************************/
@@ -138,13 +237,13 @@ h3 {
     margin: auto;
 }
 
-.team-item h3,
 .team-item {
-    padding: 3rem 0;
+    margin: 2rem 0;
 }
 
-.team-img img {
-    border-radius: 50%;
+.team-item,
+.team-item h3 {
+    padding: 3rem 0;
 }
 
 .team-item a {
@@ -153,10 +252,18 @@ h3 {
     width: max-content;
 }
 
+.team-img img {
+    border-radius: 50%;
+}
+
+.team-img img:hover {
+    opacity: .8;
+}
+
 /*********************************** Footer ****************************/
 .contact {
     padding: 6rem 0;
-} 
+}
 
 .contact h2 {
     padding-bottom: 5rem;
@@ -164,7 +271,29 @@ h3 {
 
 fieldset {
     border: none;
+    padding: 0rem 40rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.contact-items {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+}
+
+.contact-item {
+    width: 100%;
+}
+
+fieldset label {
     text-align: left;
+}
+
+fieldset input {
+    padding: 1rem;
 }
 
 input,
@@ -176,11 +305,18 @@ label {
     border-radius: .5rem;
     margin-bottom: 3rem;
 }
+
 input[type=submit] {
     background-color: #fff;
     border: none;
     font-family: 'Open Sans', serif;
     width: max-content;
+    margin: 2rem 0;
+}
+
+.submit::before {
+    font: var(--fa-font-solid);
+    content: "\f1d8";
 }
 
 @media screen and (min-width:760px) {
@@ -203,20 +339,20 @@ input[type=submit] {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
-    
+
     .contact input {
-      margin-bottom: 3rem;
+        margin-bottom: 3rem;
     }
 
     input,
     textarea,
     label {
-        width: 80%;
         margin: auto;
     }
 }
 
 @media screen and (min-width:990px) {
+
     .services,
     .team-items {
         display: grid;
@@ -227,26 +363,12 @@ input[type=submit] {
     .team h2 {
         font-size: 3rem;
     }
-
-
-
-    .contact-items {
-        margin: auto;
-        display: grid;
-        width: 80%;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .contact-item2{
-        width: 90%;
-        margin: auto;
-    }
-
-
 }
 
 @media screen and (min-width:1200px) {
     nav {
-
+        display: flex;
+        gap: 2rem;
     }
 
     .services {
@@ -265,4 +387,3 @@ input[type=submit] {
         width: 70%;
     }
 }
-

@@ -7,10 +7,9 @@
 	<title>Super App</title>
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"> 
-	<link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
-	<link href="/your-path-to-fontawesome/css/brands.css" rel="stylesheet">
-  	<link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+	<script src="https://kit.fontawesome.com/f4dab05707.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -33,11 +32,17 @@
 			<div class="about-items">
 				<h1>Super App</h1>
 
-				<p>L'application trop super&nbsp!</p>
+				<p>L'application trop super &nbsp!</p>
 				<ul>
-					<li class="fa-thumbs-o-up"><a href=""> Like it</a></li>
-					<li class="fa-heart"><a href=""> Love it</a></li>
-					<li class="fa-shopping-cart"><a href=""> Buy it</a></li>
+					<li>
+						<a href="#" class="thumbs button"> Like it</a>
+					</li>
+					<li>
+						<a href="#" class="heart button"> Love it</a>
+					</li>
+					<li>
+						<a href="#" class="shopping button"> Buy it</a>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -48,45 +53,50 @@
 			<h2>Elle fait des trucs supers !</h2>
 			<div class="services">
 				<article class="service-item">
-					<div class="fas fa-utensils"></div>
+					<div class="icon fa-2xl utensils"></div>
 					<h3>Mettre la table</h3>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ea quis nesciunt dolore, nulla
-						sapiente saepe maiores nemo voluptas molestiae! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, earum.</p>
+						sapiente saepe maiores nemo voluptas molestiae! Lorem ipsum dolor sit amet consectetur,
+						adipisicing elit. Eaque, earum.</p>
 				</article>
 
 				<article class="service-item">
-					<div class="fas fa_bed"></div>
+					<div class="icon fa-2xl bed "></div>
 					<h3>Faire le lit</h3>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ea quis nesciunt dolore, nulla
-						sapiente saepe maiores nemo voluptas molestiae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, dignissimos.</p>
+						sapiente saepe maiores nemo voluptas molestiae! Lorem ipsum dolor sit amet consectetur
+						adipisicing elit. Dolores, dignissimos.</p>
 				</article>
 
 				<article class="service-item">
-					<div class="fas fa_fire"></div>
+					<div class="icon fa-2xl fire"></div>
 					<h3>Allumer le feu</h3>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ea quis nesciunt dolore, nulla
-						sapiente saepe maiores nemo voluptas molestiae! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, cumque.</p>
+						sapiente saepe maiores nemo voluptas molestiae! Lorem, ipsum dolor sit amet consectetur
+						adipisicing elit. Tempora, cumque.</p>
 				</article>
 
 				<article class="service-item">
-					<div class="fas fa_leaf"></div>
+					<div class="icon fa-2xl leaf"></div>
 					<h3>Ramasser les feuilles</h3>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ea quis nesciunt dolore, nulla
-						sapiente saepe maiores nemo voluptas molestiae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, amet.</p>
+						sapiente saepe maiores nemo voluptas molestiae! Lorem ipsum dolor sit amet consectetur
+						adipisicing elit. Quis, amet.</p>
 				</article>
 
 				<article class="service-item">
-					<div class="fas fa_umbrella"></div>
+					<div class="icon fa-2xl umbrella"></div>
 					<h3>Protéger de la pluie</h3>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ea quis nesciunt dolore, nulla
 						sapiente saepe maiores nemo voluptas molestiae!</p>
 				</article>
 
 				<article class="service-item">
-					<div class="fas fa_dollar"></div>
+					<div class="icon fa-2xl dollar"></div>
 					<h3>Vider votre compte</h3>
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ea quis nesciunt dolore, nulla
-						sapiente saepe maiores nemo voluptas molestiae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, aliquam.</p>
+						sapiente saepe maiores nemo voluptas molestiae! Lorem ipsum dolor sit amet consectetur
+						adipisicing elit. Doloribus, aliquam.</p>
 				</article>
 			</div>
 		</div>
@@ -94,11 +104,11 @@
 
 
 	<article id="team" class="team">
-		
-			<div class="img-background">
-				<h2>La super équipe à l'origine de Super App</h2>
-			</div>
-			<div class="container">
+
+		<div class="img-background">
+			<h2>La super équipe à l'origine de Super App</h2>
+		</div>
+		<div class="container">
 			<ul class="no-background team-items">
 				<li class="team-item">
 					<div class="team-img">
@@ -133,8 +143,8 @@
 	</article>
 
 	<footer id="contact" class="contact color-background">
-		
-			<h2>Envoyez- nous un message</h2>
+
+		<h2>Envoyez- nous un message</h2>
 
 			<fieldset>
 				<div class="contact-items">
@@ -147,18 +157,13 @@
 						<input id="email" type="text">
 					</div>
 				</div>
-					
-				
-				
-				<div class="contact-item2">
+				<div class="contact-item">
 					<label for="message">Votre message</label>
-					<textarea id="message" type="textarea" rows="4"></textarea>
-				
-					<input type="submit">
+					<textarea id="message" rows="4"></textarea>
 				</div>
-			
+				<input type="submit" class="submit button">
+				
 			</fieldset>
-
 	</footer>
 </body>
 
