@@ -118,11 +118,6 @@ a {
     padding: 6rem 0;
 }
 
-.button:hover {
-    background-color: #dd5555;
-    color: #fff;
-}
-
 .team-item a:hover {
     background: #fff;
     color: #2e2e2e;
@@ -342,6 +337,11 @@ input[type=submit] {
         width: 80%;
     }
 
+    .button:hover {
+        background-color: #dd5555;
+        color: #fff;
+    }
+
     nav {
         display: flex;
         flex-direction: row;
@@ -358,8 +358,10 @@ input[type=submit] {
     }
 
     .about ul {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
     }
 
     .contact input {
