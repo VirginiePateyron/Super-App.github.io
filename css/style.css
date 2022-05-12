@@ -332,6 +332,10 @@ input[type=submit] {
     content: "\f1d8";
 }
 
+.submit:hover {
+    border: 1px #fff solid;
+}
+
 @media screen and (min-width:760px) {
     .container {
         width: 80%;
