@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Super App</title>
+	<title>Super App : une page de présentation d'un site vitrine simple pour montrer son équipe et ses services</title>
 	<link rel="stylesheet" href="./css/base.css" type="text/css" media="screen">
 	<link rel="stylesheet" href="./css/style-dist.css" type="text/css" media="screen">
 	<link rel="stylesheet" href="./css/stylePrt.css" type="text/css" media="print">
@@ -14,160 +13,156 @@
 </head>
 
 <body>
-	<header class="color-background">
+	<div class="color-background">
 		<div class="container">
-			<nav>
-				<img id="home" class="logo" src="./img/logo.png" alt="logo de Super App">
+			<nav role="navigation" aria-label="Menu principal" class="nav-list">
+				<a href="#about" class="nav-item" title="Les services de notre app page active"><img class="logo" src="./img/logo.png" alt=""></a>
 				<ul>
-					<li><a href="#about"> A propos</a></li>
-					<li><a href="#services">Services</a> </li>
-					<li><a href="#team">L'équipe</a> </li>
-					<li><a href="#contact">Contact</a> </li>
+					<li class="nav-item"><a href="#about" aria-label="En cliquant, vous allez être dirigé vers la section à propos">A propos</a></li>
+					<li class="nav-item"><a href="#services" aria-label="En cliquant, vous pourreze découvrir des services" class="nav-link">Services</a> </li>
+					<li class="nav-item"><a href="#team" aria-label="En cliquant, découvrez les membres de notre équipe !" class="nav-link">L'équipe</a> </li>
+					<li class="nav-item"><a href="#contact" aria-label="En cliquant, vous pourrez nous envoyer un message en remplissant ce formulaire simple" class="nav-link">Contact</a> </li>
 				</ul>
 			</nav>
 		</div>
-	</header>
+	</div>
 
-	<article id="about" class="about img-background">
+	<header id="about" class="about img-background" role="banner">
 		<div class="container">
 			<div class="about-items">
 				<h1>Super App</h1>
-
 				<p>L'application trop super &nbsp!</p>
 				<ul>
 					<li>
-						<a href="#" class="thumbs button"> Like it</a>
+						<a href="#" class="thumbs button" aria-label="Ceci est un bouton fictif : Aimez cette app sur notre page"> Like it</a>
 					</li>
 					<li>
-						<a href="#" class="heart button"> Love it</a>
+						<a href="#" class="heart button" aria-label="Ceci est un bouton fictif : Donnez une note à notre app sur la page de la boutique d'applications"> Love it</a>
 					</li>
 					<li>
-						<a href="#" class="shopping button"> Buy it</a>
+						<a href="#" class="shopping button" aria-label="Ceci est un bouton fictif : Acheter notre application en suivant ce lien"> Buy it</a>
 					</li>
 				</ul>
 			</div>
 		</div>
-	</article>
+	</header>
 
-	<a href="#home" class="fa-2xl back-to-top"></a>
-
-	<article id="services" class="no-background">
-		<div class="container">
-			<h2>Elle fait des trucs supers !</h2>
-			<div class="services">
-				<article class="service-item">
-					<div class="icon fa-2xl utensils"></div>
-					<h3>Mettre la table</h3>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ea quis nesciunt dolore, nulla
-						sapiente saepe maiores nemo voluptas molestiae! Lorem ipsum dolor sit amet consectetur,
-						adipisicing elit. Eaque, earum.</p>
-				</article>
-
-				<article class="service-item">
-					<div class="icon fa-2xl bed "></div>
-					<h3>Faire le lit</h3>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ea quis nesciunt dolore, nulla
-						sapiente saepe maiores nemo voluptas molestiae! Lorem ipsum dolor sit amet consectetur
-						adipisicing elit. Dolores, dignissimos.</p>
-				</article>
-
-				<article class="service-item">
-					<div class="icon fa-2xl fire"></div>
-					<h3>Allumer le feu</h3>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ea quis nesciunt dolore, nulla
-						sapiente saepe maiores nemo voluptas molestiae! Lorem, ipsum dolor sit amet consectetur
-						adipisicing elit. Tempora, cumque.</p>
-				</article>
-
-				<article class="service-item">
-					<div class="icon fa-2xl leaf"></div>
-					<h3>Ramasser les feuilles</h3>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ea quis nesciunt dolore, nulla
-						sapiente saepe maiores nemo voluptas molestiae! Lorem ipsum dolor sit amet consectetur
-						adipisicing elit. Quis, amet.</p>
-				</article>
-
-				<article class="service-item">
-					<div class="icon fa-2xl umbrella"></div>
-					<h3>Protéger de la pluie</h3>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ea quis nesciunt dolore, nulla
-						sapiente saepe maiores nemo voluptas molestiae!</p>
-				</article>
-
-				<article class="service-item">
-					<div class="icon fa-2xl dollar"></div>
-					<h3>Vider votre compte</h3>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ea quis nesciunt dolore, nulla
-						sapiente saepe maiores nemo voluptas molestiae! Lorem ipsum dolor sit amet consectetur
-						adipisicing elit. Doloribus, aliquam.</p>
-				</article>
-			</div>
-		</div>
-	</article>
-
-
-	<article id="team" class="team">
-
-		<div class="img-background">
-			<h2>La super équipe à l'origine de Super App</h2>
-		</div>
-		<div class="container">
-			<ul class="no-background team-items">
-				<li class="team-item">
-					<div class="team-img">
-						<img src="./img/team/tex_talign.jpg" alt="photo de profil de Tex Talign">
+	<main>
+		<a href="#home" class="fa-2xl back-to-top" aria-label="Cliquez pour revenir à l'accueil du site"></a>
+		<section id="services" class="no-background">
+			<div class="container">
+				<h2>Elle fait des trucs supers !</h2>
+				<div class="services">
+					<article class="service-item">
+						<div class="icon fa-2xl utensils"></div>
+						<h3>Mettre la table</h3>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ea quis nesciunt dolore, nulla
+							sapiente saepe maiores nemo voluptas molestiae! Lorem ipsum dolor sit amet consectetur,
+							adipisicing elit. Eaque, earum.</p>
+					</article>
+					<article class="service-item">
+						<div class="icon fa-2xl bed "></div>
+								<h3>Faire le lit</h3>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ea quis nesciunt dolore, nulla
+								sapiente saepe maiores nemo voluptas molestiae! Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. Dolores, dignissimos.</p>
+						</article>
+						<article class="service-item">
+							<div class="icon fa-2xl fire"></div>
+							<h3>Allumer le feu</h3>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ea quis nesciunt dolore, nulla
+								sapiente saepe maiores nemo voluptas molestiae! Lorem, ipsum dolor sit amet consectetur
+								adipisicing elit. Tempora, cumque.</p>
+						</article>
+						<article class="service-item">
+							<div class="icon fa-2xl leaf"></div>
+							<h3>Ramasser les feuilles</h3>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ea quis nesciunt dolore, nulla
+								sapiente saepe maiores nemo voluptas molestiae! Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. Quis, amet.</p>
+						</article>
+						<article class="service-item">
+							<div class="icon fa-2xl umbrella"></div>
+							<h3>Protéger de la pluie</h3>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ea quis nesciunt dolore, nulla
+								sapiente saepe maiores nemo voluptas molestiae!</p>
+						</article>
+						<article class="service-item">
+							<div class="icon fa-2xl dollar"></div>
+							<h3>Vider votre compte</h3>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ea quis nesciunt dolore, nulla
+								sapiente saepe maiores nemo voluptas molestiae! Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. Doloribus, aliquam.</p>
+						</article>
 					</div>
-					<h3>Tex Talign</h3>
-					<a href="mailto:textalign@fake.com" target="_blank">Lui écrire</a>
-				</li>
-				<li class="team-item">
-					<div class="team-img">
-						<img src="./img/team/marge_inn.jpg" alt="photo de profil de Marge Inn">
-					</div>
-					<h3>Marge Inn</h3>
-					<a href="mailto:margeinn@fake.com" target="_blank">Lui écrire</a>
-				</li>
-				<li class="team-item">
-					<div class="team-img">
-						<img src="./img/team/les_ten.jpg" alt="photo de profil de Les Ten">
-					</div>
-					<h3>Les Ten</h3>
-					<a href="mailto:lesten@fake.com" target="_blank">Lui écrire</a>
-				</li>
-				<li class="team-item">
-					<div class="team-img">
-						<img src="./img/team/ash_tehemel.jpg" alt="photo de profil de Ash Tehemel">
-					</div>
-					<h3>Ash Tehemel</h3>
-					<a href="mailto:ashtehemel@fake.com" target="_blank">Lui écrire</a>
-				</li>
-			</ul>
-		</div>
-	</article>
+				</div>
+			</section>
 
-	<footer id="contact" class="contact color-background">
+			<section id="team" class="team">
+				<div class="img-background">
+					<h2>La super équipe à l'origine de Super App</h2>
+				</div>
+				<div class="container">
+					<ul class="no-background team-items">
+						<li class="team-item">
+							<div class="team-img">
+								<img src="./img/team/tex_talign.jpg" alt="">
+							</div>
+							<h3>Tex Talign</h3>
+							<a href="mailto:textalign@fake.com" target="_blank" aria-label="Ceci est un bouton fictif : Ecrivez à Tex Talign pour en savoir plus sur le développement de l'application !">Lui écrire</a>
+						</li>
+						<li class="team-item">
+							<div class="team-img">
+								<img src="./img/team/marge_inn.jpg" alt="">
+							</div>
+							<h3>Marge Inn</h3>
+							<a href="mailto:margeinn@fake.com" target="_blank" aria-label="Ceci est un bouton fictif : Ecrivez à Marge Inn pour découvrir comment fonctionne l'application ">Lui écrire</a>
+						</li>
+						<li class="team-item">
+							<div class="team-img">
+								<img src="./img/team/les_ten.jpg" alt="">
+							</div>
+							<h3>Les Ten</h3>
+							<a href="mailto:lesten@fake.com" target="_blank" aria-label="Ceci est un bouton fictif : Ecrivez un mot doux à Les Ten et il vous aidera à utiliser l'application qui est accessible !">Lui écrire</a>
+						</li>
+						<li class="team-item">
+							<div class="team-img">
+								<img src="./img/team/ash_tehemel.jpg" alt="">
+							</div>
+							<h3>Ash Tehemel</h3>
+							<a href="mailto:ashtehemel@fake.com" target="_blank" aria-label="Ceci est un bouton fictif : Rédigez ce que vous voulez (ou presque !) à Ash Tehemel pour connaître la suite des aventures de Super App !">Lui écrire</a>
+						</li>
+					</ul>
+				</div>
+			</section>
 
+	<section id="contact" class="contact color-background">
 		<h2>Envoyez- nous un message</h2>
-
 			<fieldset>
 				<div class="contact-items">
 					<div class="contact-item">
-						<label for="name">Votre nom</label>
-						<input id="name" type="text">
+						<label for="name">Votre nom *</label><span id="saisie" hidden>Veuillez renseigner votre nom</span>
+						<input id="name" type="text" aria-label="Saisissez votre nom" autocomplete="given-name" aria-invalid="true" aria-describedby="saisie" placeholder="Veuillez saisir votre nom">
 					</div>
 					<div class="contact-item">
-						<label for="email">Votre e-mail</label>
-						<input id="email" type="text">
+						<label for="email">Votre e-mail * </label>
+						<input id="email" type="text" aria-label="Saisissez votre email pour que nous vous recontactions" autocomplete="given-name" required aria-invalid="true" aria-describedby="format" placeholder="Veuillez saisir votre email">
+						<span id="format" hidden>Veuillez respecter le format de l'email (exemple@domaine.fr)</span>
 					</div>
 				</div>
 				<div class="contact-item">
 					<label for="message">Votre message</label>
-					<textarea id="message" rows="4"></textarea>
+					<textarea id="message" aria-label="Rédigez votre message et l'équipe vous répondra dès réception" placeholder="Rédigez votre message et l'équipe vous répondra dès réception" aria-required="true"></textarea>
 				</div>
 				<input type="submit" class="submit button">
-				
 			</fieldset>
+	</section>
+
+	<footer role="contentinfo">
+
 	</footer>
+
+	<script src="./js/script.js"></script>
 </body>
 
 </html>

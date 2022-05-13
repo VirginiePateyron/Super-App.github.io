@@ -74,6 +74,11 @@
 
 /* -- */
 
+::selection {
+    background-color: #dd5555;
+  }
+  
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 1.6rem;
@@ -126,7 +131,7 @@ a {
 
 /********************************** Navbar *******************************/
 header {
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .logo {
@@ -153,6 +158,11 @@ nav ul li a:hover {
     background: #ef4f4f;
     padding: 1rem;
 }
+
+.nav-item.active{
+    text-decoration:underline;
+    background:#933C53;
+   }
 
 
 /********************************* About *******************************/
@@ -336,6 +346,10 @@ input[type=submit] {
     margin: 2rem 0;
 }
 
+textarea {
+    padding: 2rem;
+}
+
 .submit::before {
     font: var(--fa-font-solid);
     content: "\f1d8";
@@ -406,8 +420,14 @@ input[type=submit] {
 
 @media screen and (min-width:1200px) {
 
+    .color-background:first-child {
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
+    }
+
     .logo {
-        margin: 0 2rem;
+        margin: 1rem;
     }
 
     .services {
