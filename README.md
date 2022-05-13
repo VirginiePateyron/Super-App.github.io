@@ -1,5 +1,10 @@
 # Home page HTML integration for Super App
 
+<div id="header" align="center">
+  <img src="img/mockup-superapp.png" alt="Mise en situation du site web SuperApp en vue sur un Mac" width="500" />
+</div>
+
+
 ## Process
 
 ### Analyse
@@ -8,6 +13,5 @@
 - Analyse elements in detail : analyse differences between mobile and desktop wireframe
 
 
-![Maquette version bureau](mockup-superapp.png)
 
 
