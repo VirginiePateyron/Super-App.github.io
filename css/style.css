@@ -84,7 +84,7 @@ body {
 }
 
 .container {
-    width: 90%;
+    width: 100%;
     margin: auto;
 }
 
@@ -145,10 +145,13 @@ nav ul {
     justify-content: space-around;
 }
 
+nav ul li a {
+    padding: 1rem;
+}
+
 nav ul li a:hover {
     background: #ef4f4f;
-    padding: 2rem;
-    max-width: 100%;
+    padding: 1rem;
 }
 
 
@@ -299,6 +302,10 @@ fieldset {
     width: 100%;
 }
 
+.contact-item:first-child {
+    margin-right: 2rem;
+}
+
 .contact-item {
     width: 100%;
 }
@@ -370,7 +377,7 @@ input[type=submit] {
     nav {
         flex-direction: row;
     }
-    
+
     nav ul {
         flex-direction: row;
         justify-content: flex-start;
@@ -414,12 +421,10 @@ input[type=submit] {
     .team h2 {
         font-size: 4.8rem;
     }
-
-
 }
 
 @media screen and (min-width:1600px) {
     .container {
-        width: 70%;
+        width: 1200px;
     }
 }
