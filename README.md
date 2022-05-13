@@ -20,6 +20,21 @@
 > Later i'll install PostCSS to use plugins and automatize my tasks : 
 > minimize css code, prettify html, check the accessibility, optimize medias...
 
+### Web Integration Method
+- Create a repository in GitHub to share the project with client
+- Optimize medias with Photoshop
+- Think about the structure to build a correct HTML file. <a href="https://validator.w3.org/">Check the code with W3C Markup HTML Validator</a>
+- Create the style file after finishing the HTML. Start building in responsive mode (mobile-first). Adapt the few responsive rules fast. <a href="https://jigsaw.w3.org/css-validator/">Check the code with W3C Markup CSS Validator</a>
+
+#### Sustainability rules
+- Check the code with the <a href="https://github.com/cnumr/GreenIT-Analysis">Green-IT plugin</a> in web browser.
+
+#### Accessiblity rules
+- Check all HTML code with <a href="https://www.accede-web.com/en/guidelines/html-css/"> Accede Web rules </a>
+
+#### Optimize the CSS files
+- Optimize the CSS file with <a href="https://autoprefixer.github.io/">Autoprefixer</a> and minify with <a href="https://prepros.io/">Prepros</a>
+
 
 
 
