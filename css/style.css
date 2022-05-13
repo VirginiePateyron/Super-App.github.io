@@ -134,13 +134,15 @@ header {
     margin: auto;
 }
 
-nav ul {
-    font-size: 1.4rem;
-    font-family: "Open Sans";
-    line-height: 1.2;
-
+nav {
     display: flex;
-    gap: 2rem;
+    flex-direction: column;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 nav ul li a:hover {
@@ -159,7 +161,7 @@ h1 {
 
 .about {
     text-align: center;
-    background-image: url(../img/about.svg);
+    background-image: url(../img/about.jpg);
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -239,7 +241,7 @@ h3 {
 }
 
 .team .img-background {
-    background-image: url(../img/team/team.svg);
+    background-image: url(../img/team/team.jpg);
     background-position: top;
 }
 
@@ -346,25 +348,10 @@ input[type=submit] {
         color: #fff;
     }
 
-    nav {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .logo {
-        margin: 0 2rem;
-    }
-
-    .about-items {
-        max-width: 50%;
-        margin: auto;
-    }
-
     .about ul {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
         gap: 2rem;
     }
 
@@ -380,6 +367,23 @@ input[type=submit] {
 }
 
 @media screen and (min-width:990px) {
+    nav {
+        flex-direction: row;
+    }
+    
+    nav ul {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    nav ul li {
+        margin: 0 2rem;
+    }
+
+    .about-items {
+        max-width: 50%;
+        margin: auto;
+    }
 
     .services,
     .team-items {
@@ -394,13 +398,9 @@ input[type=submit] {
 }
 
 @media screen and (min-width:1200px) {
-    nav {
-        display: flex;
-        gap: 2rem;
-    }
 
-    nav ul {
-        gap: 4rem;
+    .logo {
+        margin: 0 2rem;
     }
 
     .services {
