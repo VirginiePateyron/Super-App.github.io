@@ -8,6 +8,6 @@
 - Analyse elements in detail : analyse differences between mobile and desktop wireframe
 
 
-![Maquette version bureau](5.jpg)
+![Maquette version bureau](mockup-superapp.png)
 
 
